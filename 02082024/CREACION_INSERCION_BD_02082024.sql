@@ -1,17 +1,17 @@
--- Creación de Base de Datos
--- CREATE DATABASE PRUEBA
+-- CreaciÃ³n de Base de Datos
+CREATE DATABASE PRACTICA_02082024
 
 -- Selecciona la Base de Datos
-USE EXAMEN
+USE PRACTICA_02082024
 
--- Creación de Tablas
--- create table clientes (cod_cli CHAR(5) PRIMARY KEY, raz_soc VARCHAR(30), ruc CHAR(11), telefono CHAR(9), fec_nac DATE, direccion VARCHAR(30), mail VARCHAR(30))
--- create table vendedores (cod_ven CHAR(3) PRIMARY KEY, apellidos VARCHAR(30), nombres VARCHAR(30), dni CHAR (8), telefono CHAR (9), direccion VARCHAR(30), fec_nac DATE, mail VARCHAR(30))
--- create table articulos (cod_Art CHAR(5) PRIMARY KEY, descripcion VARCHAR(40), marca VARCHAR(20), modelo VARCHAR(40), precio DECIMAL(7,2), stock INT)
--- create table factura (num_fac CHAR(6) PRIMARY KEY, fec_emi DATE, cod_cli CHAR(5), cod_ven CHAR(3))
--- create table detalle (num_fac CHAR(6), cantidad INT, pre_ven DECIMAL(7,2), cod_art CHAR(5))
+-- CreaciÃ³n de Tablas
+create table clientes (cod_cli CHAR(5) PRIMARY KEY, raz_soc VARCHAR(30), ruc CHAR(11), telefono CHAR(9), fec_nac DATE, direccion VARCHAR(30), mail VARCHAR(30))
+create table vendedores (cod_ven CHAR(3) PRIMARY KEY, apellidos VARCHAR(30), nombres VARCHAR(30), dni CHAR (8), telefono CHAR (9), direccion VARCHAR(30), fec_nac DATE, mail VARCHAR(30))
+create table articulos (cod_Art CHAR(5) PRIMARY KEY, descripcion VARCHAR(40), marca VARCHAR(20), modelo VARCHAR(40), precio DECIMAL(7,2), stock INT)
+create table factura (num_fac CHAR(6) PRIMARY KEY, fec_emi DATE, cod_cli CHAR(5), cod_ven CHAR(3))
+create table detalle (num_fac CHAR(6), cantidad INT, pre_ven DECIMAL(7,2), cod_art CHAR(5))
 
---Llenado de la tabla articulos
+-- Llenado de la tabla articulos
 INSERT INTO articulos VALUES ('A0001', 'MOUSE OPTICO','GENIUS', 'NX-7000', 35.50, 10)
 INSERT INTO articulos VALUES ('A0002', 'MOUSE OPTICO','GENIUS', 'MNNX-7000', 38.20, 15)
 INSERT INTO articulos VALUES ('A0003', 'MOUSE OPTICO','LOGITECH', 'LX-SS30', 40.50, 8)
